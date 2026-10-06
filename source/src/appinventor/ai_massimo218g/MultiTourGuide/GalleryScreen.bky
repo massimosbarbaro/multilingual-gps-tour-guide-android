@@ -1,0 +1,1041 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="ZN|Ljgd!.L?ju/N)b+Fc" x="-778" y="-606">
+    <field name="NAME">LocationIndex</field>
+    <value name="VALUE">
+      <block type="math_number" id=",CVgf{,Qu@%nJW8dOo5_">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="ysHu]:`zrh)c*2oJkUcL" x="-788" y="-561">
+    <field name="NAME">Locations</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~mgihImG;*OZ7(dFP]--">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="0|V);B)ovx86GUwM#~st">
+            <field name="TEXT">Sarženska</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="w2^Vpd[[?p@604=9w(+q">
+            <field name="TEXT">Ivanka</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="t1*T6y|)-SX4}(HPpS?+">
+            <field name="TEXT">Matajurka</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id=".)xT_k$|@{.}3q7UD18R">
+            <field name="TEXT">Arbeška</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="n5pHx56kOtrXU=td0`3j">
+            <field name="TEXT">Rečanka</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="~sb@cKpX:Bj8E_)G93@#">
+            <field name="TEXT">Starogorka</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="|#57^i?J(Sr=,osIJWea" x="-11" y="-548">
+    <mutation component_type="Form" is_generic="false" instance_name="GalleryScreen" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">GalleryScreen</field>
+    <statement name="DO">
+      <block type="component_set_get" id="7g,Qn/GR_oN-6un/Q#s=">
+        <mutation component_type="Image" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Image1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image1</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="Yg)(w;E74*!![N?.UQn/">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="b^PE|F+wF)yUn$)`:!m$">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Visible" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="9aA#4nd2X5si9DRk.mts">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="__aCR/{A(X(2/M2G(X/h">
+                <field name="VAR">global LocationIndex</field>
+                <value name="VALUE">
+                  <block type="lists_position_in" id="8UStZzh!7u[=H3`](J*Z">
+                    <value name="ITEM">
+                      <block type="component_method" id="YZMNpdDo0|Xp)%mm:v{J">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="/(5}PXG%wXzXpk9=]HZn">
+                            <field name="TEXT">Krivapeta</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="h|jd2oMRTNA.NDd6)*yq">
+                            <field name="TEXT">Ivanka</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="IxmH(d|w{ZJBb*o_TSz8">
+                        <field name="VAR">global Locations</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="4C;TiGKmhY~4[LjTH,B.">
+                    <field name="VAR">global CurrentIndex</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="x:XVukHJF;pMh3Lu$ZtO">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="|QRhl_~KR?zs*USG)+?q">
+                        <field name="VAR">global PhotoList</field>
+                        <value name="VALUE">
+                          <block type="component_method" id="$XBs.L,9HLFAlVV9Zl0t">
+                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                            <value name="ARG0">
+                              <block type="text_join" id="5uUU(`pxHkmIog`-b}em">
+                                <mutation items="3"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="yOSov/Lb=OV-22Zby*)q">
+                                    <field name="TEXT">PhotoList</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id=",g/)NlNWNn@!D;(gl.,.">
+                                    <field name="TEXT">-</field>
+                                  </block>
+                                </value>
+                                <value name="ADD2">
+                                  <block type="component_method" id="Kxu%!Nqpx#H?Ic=]+l!G">
+                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="7)[R#jv.|CT0Nx.AKBtA">
+                                        <field name="TEXT">Krivapeta</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="text" id="w=KRcDIL~|?7JUnBo2w`">
+                                        <field name="TEXT">Ivanka</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="lists_create_with" id="*G8W[}p:CX4f1c9q`uRr">
+                                <mutation items="0"></mutation>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="PbGad+]Wb%jB5tX+ynLV">
+                            <value name="IF0">
+                              <block type="logic_negate" id="P;GWO{F8DfG$4z%LZxFR">
+                                <value name="BOOL">
+                                  <block type="lists_is_empty" id=",h5[nbc%+2wp[ONURzWV">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="%d$Mb-vdSn9!CC8Kk@T#">
+                                        <field name="VAR">global PhotoList</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="lexical_variable_set" id="p$I=T_Hb5DH|/4A5nbcp">
+                                <field name="VAR">global CurrentIndex</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="SRQ@,bPUeQ2i`;xif_QR">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="}XX8vs[+r{pY;I#aGo#V">
+                                    <mutation component_type="ImageSprite" set_or_get="set" property_name="Picture" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                    <field name="PROP">Picture</field>
+                                    <value name="VALUE">
+                                      <block type="lists_select_item" id="9R?3lRWVUla.`AYlSWxI">
+                                        <value name="LIST">
+                                          <block type="lexical_variable_get" id="ZPvoa07PyizFI`{{H.f(">
+                                            <field name="VAR">global PhotoList</field>
+                                          </block>
+                                        </value>
+                                        <value name="NUM">
+                                          <block type="lexical_variable_get" id="O[oA!!{HT?ad*,:wurqK">
+                                            <field name="VAR">global CurrentIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="lexical_variable_set" id="yrdOjas)n4d2W%VbF(ft">
+                                <field name="VAR">global factor</field>
+                                <value name="VALUE">
+                                  <block type="math_division" id="F#m7O?XXJ?$w;i1VzF8~">
+                                    <value name="A">
+                                      <block type="component_set_get" id=")u.lc8a:4@8Q_@+/IFJ`">
+                                        <mutation component_type="ImageSprite" set_or_get="get" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                        <field name="PROP">Height</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="component_set_get" id="sP%6GwM/kFj/F(2yi`u4">
+                                        <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                        <field name="PROP">Width</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_method" id="2" inline="false">
+                                    <mutation component_type="ScaleDetector" method_name="AddHanderToCanvas" is_generic="false" instance_name="ScaleDetector1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">ScaleDetector1</field>
+                                    <value name="ARG0">
+                                      <block type="component_component_block" id="3">
+                                        <mutation component_type="Canvas" instance_name="Canvas1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Canvas1</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="W@YyL.J/=Ve?mxJe-%Y(">
+                                        <mutation component_type="ImageSprite" set_or_get="set" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                        <field name="PROP">Height</field>
+                                        <value name="VALUE">
+                                          <block type="math_multiply" id="*^XLjci(9*,Ks53Wu`$K">
+                                            <mutation items="2"></mutation>
+                                            <value name="NUM0">
+                                              <block type="component_set_get" id=";345al;b}9ziBZ}n)VXv">
+                                                <mutation component_type="ImageSprite" set_or_get="get" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                                <field name="PROP">Height</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM1">
+                                              <block type="math_number" id="MN7.9b5T{~,jSsQ^aI7L">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_set_get" id="|MjZB^[1-XfnJ_!I!BBN">
+                                            <mutation component_type="ImageSprite" set_or_get="set" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                            <field name="PROP">Width</field>
+                                            <value name="VALUE">
+                                              <block type="math_multiply" id="W.5oRD{y(-ob~uuq:H/4">
+                                                <mutation items="2"></mutation>
+                                                <value name="NUM0">
+                                                  <block type="component_set_get" id="TrVrW$Ks?pQ@bSt!p(K/">
+                                                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                                                    <field name="PROP">Width</field>
+                                                  </block>
+                                                </value>
+                                                <value name="NUM1">
+                                                  <block type="math_number" id="-Av-kp^6;DxzVzu4K5[l">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="231}D4It]io;p%r%BSeS" x="-778" y="-375">
+    <field name="NAME">PhotoList</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="2iM}YsA_--U@}d!BGq=Z">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="~}[g;f199Pcc^7d1$z@;" x="-775" y="-337">
+    <field name="NAME">CurrentIndex</field>
+    <value name="VALUE">
+      <block type="math_number" id="YIMv@cgh/d`ax`2b)r{u">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="nR_ifYrhbbnW*c$O#DvY" x="-778" y="-290">
+    <mutation component_type="Button" is_generic="false" instance_name="CameraButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CameraButton</field>
+    <statement name="DO">
+      <block type="component_method" id="``O-9GZCRM@cJK_uO%?$">
+        <mutation component_type="Camera" method_name="TakePicture" is_generic="false" instance_name="Camera1"></mutation>
+        <field name="COMPONENT_SELECTOR">Camera1</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="nBw85c[XGZwu1LE;*V8," x="-779" y="-208">
+    <mutation component_type="Camera" is_generic="false" instance_name="Camera1" event_name="AfterPicture"></mutation>
+    <field name="COMPONENT_SELECTOR">Camera1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="|f,9..DM#!RvmZ(R?D^g">
+        <mutation component_type="Image" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Image1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image1</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="y.$yo9=5idLetLC7aRu7">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="UK%SalhZxYxY2^Qj3F$Y">
+            <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image1"></mutation>
+            <field name="COMPONENT_SELECTOR">Image1</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id="Nw5.(^T;DyIO~#zn#(}w">
+                <mutation>
+                  <eventparam name="image"></eventparam>
+                </mutation>
+                <field name="VAR">image</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="=.UB_u2_|vD*Bb_O@D7:">
+                <mutation component_type="ImageSprite" set_or_get="set" property_name="Picture" is_generic="false" instance_name="ImageSprite1"></mutation>
+                <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                <field name="PROP">Picture</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id=".)d@j;I=2-kZly3BMF+m">
+                    <mutation>
+                      <eventparam name="image"></eventparam>
+                    </mutation>
+                    <field name="VAR">image</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="fM09%[*[y9oj-I`fD}s5">
+                    <mutation component_type="Image" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Image1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Image1</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="Ayuf5#t4slD3zCZex-vg">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_add_items" id="jRuE]o4{:W:~/H}kW3${">
+                        <mutation items="1"></mutation>
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="[M/V4`p7_|$$ix-]j+VE">
+                            <field name="VAR">global PhotoList</field>
+                          </block>
+                        </value>
+                        <value name="ITEM0">
+                          <block type="lexical_variable_get" id="$-3WYGHno(#1d;588GfX">
+                            <mutation>
+                              <eventparam name="image"></eventparam>
+                            </mutation>
+                            <field name="VAR">image</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="o_~}TH7GfGI8f~7p~;:L">
+                            <field name="VAR">global CurrentIndex</field>
+                            <value name="VALUE">
+                              <block type="lists_length" id="[uK2O=U4[A14g$(Z~sxe">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="A~BghCUqj}r@lr;{+6ay">
+                                    <field name="VAR">global PhotoList</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_method" id=",_otVBpw|Us{siRJ%IR{">
+                                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                <value name="ARG0">
+                                  <block type="text_join" id="Xz[*]4[XQbje]*2Q(yil">
+                                    <mutation items="3"></mutation>
+                                    <value name="ADD0">
+                                      <block type="text" id="u-,YBr{Jb^]oL`wGD-,y">
+                                        <field name="TEXT">PhotoList</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="text" id="}#0yYvr*2+%`9H5KztrF">
+                                        <field name="TEXT">-</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD2">
+                                      <block type="component_method" id="6k#RL@[Ao4H|n%GM6aYZ">
+                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id="V#$nu~D~*l)4-yM1!3%I">
+                                            <field name="TEXT">Krivapeta</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="text" id="96lU}~`Uxu5lm[LiJgvF">
+                                            <field name="TEXT">Ivanka</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="lexical_variable_get" id="e6[ay@UU5U,jn]^q^|9e">
+                                    <field name="VAR">global PhotoList</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="logic_boolean" id="xBfgt[sWavjsq2x[Qh;S" x="-282" y="-124">
+    <field name="BOOL">FALSE</field>
+  </block>
+  <block type="component_event" id="L5ftCbS(XnRM$#PAjz,N" x="-23" y="143">
+    <mutation component_type="Canvas" is_generic="false" instance_name="Canvas1" event_name="Dragged"></mutation>
+    <field name="COMPONENT_SELECTOR">Canvas1</field>
+    <statement name="DO">
+      <block type="component_method" id="Gf#7Tu}_C)u/s-#v3Sz^">
+        <mutation component_type="ImageSprite" method_name="MoveTo" is_generic="false" instance_name="ImageSprite1"></mutation>
+        <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+        <value name="ARG0">
+          <block type="math_subtract" id="18V5tD|Acb$W5k%zR,}%">
+            <value name="A">
+              <block type="lexical_variable_get" id=";pfYL+IFX;j1ZL3ETJbG">
+                <mutation>
+                  <eventparam name="currentX"></eventparam>
+                </mutation>
+                <field name="VAR">currentX</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_division" id="zJUIpf7@rl+~8Hkvwefz">
+                <value name="A">
+                  <block type="component_set_get" id="1v}ojVQZKUAUBmDy}YbJ">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="2-kg|f:6{(DF.3gZ{^;Z">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="math_add" id="Tw,--jx6A`2BjkQ@U^+1">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="lexical_variable_get" id="}w2G?79~ee4AE`f]AeL,">
+                <mutation>
+                  <eventparam name="currentY"></eventparam>
+                </mutation>
+                <field name="VAR">currentY</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="math_division" id="j|r4X(R%iv2mnfR`1A)r">
+                <value name="A">
+                  <block type="component_set_get" id="XjDGO,8XPMhmN9%4,u;^">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Height</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="BXR`vZYfe%,sR0!G^Wcf">
+                    <field name="NUM">-2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="29tum%4D3.;`QNJblEy{" x="-722" y="232">
+    <field name="NAME">factor</field>
+    <value name="VALUE">
+      <block type="math_number" id="#x=$gC1+VPsx.*O*0Y#f">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="KEg64])8$9f}yi+z-wGt" x="-763" y="323">
+    <mutation component_type="Canvas" is_generic="false" instance_name="Canvas1" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">Canvas1</field>
+    <statement name="DO">
+      <block type="component_method" id="JF~tIDGAcx,X^y8QQ4|[">
+        <mutation component_type="ImageSprite" method_name="MoveTo" is_generic="false" instance_name="ImageSprite1"></mutation>
+        <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+        <value name="ARG0">
+          <block type="math_subtract" id="|At4G.=fJKmc2e*oUD]r">
+            <value name="A">
+              <block type="lexical_variable_get" id=")tUP3pa`I]1bK33tKGxK">
+                <mutation>
+                  <eventparam name="x"></eventparam>
+                </mutation>
+                <field name="VAR">x</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_division" id="f0ck.x1K^(R7I$r}Gjfp">
+                <value name="A">
+                  <block type="component_set_get" id="{.5PRa0hY_66?n:yey[@">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="W:6oHpNiwxu`QvU7.334">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="math_add" id="D9du)mLFi?GIc-MAu1O7">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="lexical_variable_get" id="18">
+                <mutation>
+                  <eventparam name="y"></eventparam>
+                </mutation>
+                <field name="VAR">y</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="math_division" id="nL*`I~u0Hi{%J!8vY6-E">
+                <value name="A">
+                  <block type="component_set_get" id="kFnSXmv^h.2D-/7.Wt9M">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Height</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="_m4xt,h*N/q`vI5vDHi#">
+                    <field name="NUM">-2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="eBY-=R/Ud.wu|.9xVEjy" x="80" y="399">
+    <mutation component_type="Button" is_generic="false" instance_name="PreviousButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">PreviousButton</field>
+    <statement name="DO">
+      <block type="controls_if" id="Jz(r~a_H@$`~STc@164L">
+        <value name="IF0">
+          <block type="math_compare" id="g]1V3_i!Iz.GBu,42CYv">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="AI4UpkYBqP;vm2y}(h3A">
+                <field name="VAR">global CurrentIndex</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="-;P`#a(eQ,Z(o$m#Bw5r">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="lexical_variable_set" id="H=+ofLlotjxMsbTL*lHn">
+            <field name="VAR">global CurrentIndex</field>
+            <value name="VALUE">
+              <block type="math_subtract" id="HFNkC000nQ._mT}DWIy-">
+                <value name="A">
+                  <block type="lexical_variable_get" id="5N=j=]Ex=wCvaHwB]z7A">
+                    <field name="VAR">global CurrentIndex</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="v!!NB7d}1%r5rY@{H86y">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="component_set_get" id="pWrO5EBk,E5B:B$}GiKQ">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Picture" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="-X9T_,!y5N99)*B^tn{!">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="eG23e3Z==~MO-+-i1,da">
+                    <field name="VAR">global PhotoList</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="lexical_variable_get" id="y~)7m)65!FCPgFkUFm#5">
+                    <field name="VAR">global CurrentIndex</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="19" x="-775" y="549">
+    <mutation component_type="ScaleDetector" is_generic="false" instance_name="ScaleDetector1" event_name="Scale"></mutation>
+    <field name="COMPONENT_SELECTOR">ScaleDetector1</field>
+    <statement name="DO">
+      <block type="controls_if" id="20" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="21">
+            <field name="OP">GTE</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="22">
+                <mutation>
+                  <eventparam name="scaleFactor"></eventparam>
+                </mutation>
+                <field name="VAR">scaleFactor</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="23">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="J%7yH$];n9GiIUo@nLzR">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Width</field>
+            <value name="VALUE">
+              <block type="math_add" id="29">
+                <mutation items="2"></mutation>
+                <value name="NUM0">
+                  <block type="component_set_get" id=")H5{[r1pJ~^w^.kK)mJH">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="NUM1">
+                  <block type="math_number" id="31">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id=",^B#wH5@b$q2DcoV*Y@h">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Width</field>
+            <value name="VALUE">
+              <block type="math_subtract" id="w6D;ovUSo.s3w$0I:m1G">
+                <value name="A">
+                  <block type="component_set_get" id="UN)8F#U1J!AKbpH:r^N[">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="P14OaFpY!k3W+D._iBDE">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="component_set_get" id="s`:FCS]!^}188/.GIqe_">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Height" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Height</field>
+            <value name="VALUE">
+              <block type="math_multiply" id="ZHJeWZRmFMsQCa]$-V7H">
+                <mutation items="2"></mutation>
+                <value name="NUM0">
+                  <block type="component_set_get" id="[@`5Ym9-@}*R^qMl)x`E">
+                    <mutation component_type="ImageSprite" set_or_get="get" property_name="Width" is_generic="false" instance_name="ImageSprite1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+                    <field name="PROP">Width</field>
+                  </block>
+                </value>
+                <value name="NUM1">
+                  <block type="lexical_variable_get" id="wpQVV.a7u1j0wR`8EC#}">
+                    <field name="VAR">global factor</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="x6sSpPqG(lF|iQq!b4[-" x="56" y="617">
+    <mutation component_type="Button" is_generic="false" instance_name="NextButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">NextButton</field>
+    <statement name="DO">
+      <block type="controls_if" id="-@ONI}o^W0$qpXB+[s$A">
+        <value name="IF0">
+          <block type="math_compare" id="Ibz%u|jIYCUi[Jz#cL5u">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="lexical_variable_get" id=";69,{^c!-T}Mf,*eZDfy">
+                <field name="VAR">global CurrentIndex</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lists_length" id="$-m!ZLJ.U]A:uX~+EYG;">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="ON*!g}I4nrv;{2:9GMxb">
+                    <field name="VAR">global PhotoList</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="lexical_variable_set" id="1v,;y/6]9g=g{%=+K4md">
+            <field name="VAR">global CurrentIndex</field>
+            <value name="VALUE">
+              <block type="math_add" id="G/m_Mu_jnJCX0T-C+F#B">
+                <mutation items="2"></mutation>
+                <value name="NUM0">
+                  <block type="lexical_variable_get" id="-S@]o0q?7!26l.-oTYQ,">
+                    <field name="VAR">global CurrentIndex</field>
+                  </block>
+                </value>
+                <value name="NUM1">
+                  <block type="math_number" id="f++-8Mh6@AEFAywnCzfa">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="component_set_get" id="hs2Wf46|vkMqsm0F30F_">
+            <mutation component_type="ImageSprite" set_or_get="set" property_name="Picture" is_generic="false" instance_name="ImageSprite1"></mutation>
+            <field name="COMPONENT_SELECTOR">ImageSprite1</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="LYmt`MXT%iE~R+0u0EyN">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id=";l[OzhneIv~@(6;z2W)w">
+                    <field name="VAR">global PhotoList</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="lexical_variable_get" id="ff=m#h32+}:Sm_uus~RU">
+                    <field name="VAR">global CurrentIndex</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="jMWmo7RiZKa1Nc@cZ:G9" x="66" y="844">
+    <mutation component_type="Button" is_generic="false" instance_name="BackButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BackButton</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="S0hMOJvf=Jw~]O#Os`$/"></block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="M,5~Q4.#}1u[r|RP,PQH" x="-658" y="988">
+    <field name="NAME">CurrentList</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="bfUnr]$16/k#^AT.O{iV">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="rLa]QM;Y?7Ci!ArVdhI|" x="-661" y="1045">
+    <mutation component_type="Button" is_generic="false" instance_name="bDelete" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bDelete</field>
+    <statement name="DO">
+      <block type="component_set_get" id="WRWN[Hv/V=N%Ldu~?)Gw">
+        <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="ListView1"></mutation>
+        <field name="COMPONENT_SELECTOR">ListView1</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="*J#hK:C*|Z*xQ7k*sC,+">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="+Sud;Ggrl!/j-`,YlXL_" x="-674" y="1138">
+    <mutation component_type="ListView" is_generic="false" instance_name="ListView1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ListView1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="yxR$xYuZk9[V}EK-|[6n">
+        <field name="VAR">global CurrentList</field>
+        <value name="VALUE">
+          <block type="component_method" id="ST[K$(-D7/p|!(iq,1q%">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text_join" id="#-i+Dl|nCp,ajPI$-^Ky">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="T^q@B[|49RidnCJvw]]w">
+                    <field name="TEXT">PhotoList</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="hF/-Dw3D#^n/rKfjs.D|">
+                    <field name="TEXT">-</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="component_method" id=".;XXmwhvCm:bEZWe1nQt">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="zI8ZH28q9:J411Q-v]%U">
+                        <field name="TEXT">Krivapeta</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id=":P$33TXnBGKDFrEYoEgh">
+                        <field name="TEXT">Ivanka</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lists_create_with" id="CBcs$Y-FDIVY^tiJS]2^">
+                <mutation items="0"></mutation>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="t:s@%PCbHY_u~:bN@zNY">
+            <mutation component_type="ListView" set_or_get="set" property_name="ElementsFromString" is_generic="false" instance_name="ListView1"></mutation>
+            <field name="COMPONENT_SELECTOR">ListView1</field>
+            <field name="PROP">ElementsFromString</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id="3n8][S^j.SBPI`l6M{SI">
+                <field name="VAR">global CurrentList</field>
+                <comment pinned="true" h="80" w="160">Do It Result: (file:///storage/emulated/0/Pictures/app_inventor_1610393970803.jpg file:///storage/emulated/0/Pictures/app_inventor_1610393979013.jpg)
+---
+                </comment>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id=":=r[S/8Nufeor}_VH}g[">
+                <mutation component_type="ListView" set_or_get="set" property_name="SelectionColor" is_generic="false" instance_name="ListView1"></mutation>
+                <field name="COMPONENT_SELECTOR">ListView1</field>
+                <field name="PROP">SelectionColor</field>
+                <value name="VALUE">
+                  <block type="color_red" id="W|T}RlWOdZFtfITAKrJ)">
+                    <field name="COLOR">#ff0000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lists_remove_item" id="mPShVL1{dK:ExgaivW?c">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="k0!dEC};!obn={TS=zW^">
+                        <field name="VAR">global CurrentList</field>
+                      </block>
+                    </value>
+                    <value name="INDEX">
+                      <block type="math_number" id=")V4q14rgr$o@~iKDmF`E">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="t+vS*njZ.m,v0a$b.J)k">
+                        <mutation component_type="ListView" set_or_get="set" property_name="Elements" is_generic="false" instance_name="ListView1"></mutation>
+                        <field name="COMPONENT_SELECTOR">ListView1</field>
+                        <field name="PROP">Elements</field>
+                        <value name="VALUE">
+                          <block type="lexical_variable_get" id="Q+6dL[[^Xo32d487hye=">
+                            <field name="VAR">global CurrentList</field>
+                            <comment pinned="true" h="108" w="456">Do It Result: ()
+---
+                            </comment>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="4f=NyQj=j$B!R!/npE8L">
+                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                            <value name="ARG0">
+                              <block type="text_join" id="b*EqnRteqzF*R[E+|C~^">
+                                <mutation items="3"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="t8cgID]]37$N1QyF]P0b">
+                                    <field name="TEXT">PhotoList</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="d]{T?fCig?3G%vvai*iM">
+                                    <field name="TEXT">-</field>
+                                  </block>
+                                </value>
+                                <value name="ADD2">
+                                  <block type="component_method" id="iqXTpgV`P[SyV%[@YG%L">
+                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="UkTB1{P/)~c^BMq]X0nO">
+                                        <field name="TEXT">Krivapeta</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="text" id="*BQO;IC_YXj^4u+|RhY9">
+                                        <field name="TEXT">Ivanka</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="lexical_variable_get" id=";onF^:[Do7`W@+{ug*Ic">
+                                <field name="VAR">global CurrentList</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_method" id="C]Gg9,-xT+(ti%5=iNR7" x="260" y="1323">
+    <mutation component_type="TinyDB" method_name="ClearTag" is_generic="false" instance_name="TinyDB1"></mutation>
+    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+    <value name="ARG0">
+      <block type="lists_select_item" id="P}i[TO;,UN)4D#TSd%Q-">
+        <value name="LIST">
+          <block type="lexical_variable_get" id="BOO_o7tYxl+zDj`WF|,9">
+            <field name="VAR">global PhotoList</field>
+          </block>
+        </value>
+        <value name="NUM">
+          <block type="lexical_variable_get" id="y79$JAl*!+NKMd;Z?+u|">
+            <field name="VAR">global CurrentIndex</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_set_get" id="Im~;kdC9}bJ{Y-/$n3,Y" x="-233" y="1411">
+    <mutation component_type="ListView" set_or_get="get" property_name="Elements" is_generic="false" instance_name="ListView1"></mutation>
+    <field name="COMPONENT_SELECTOR">ListView1</field>
+    <field name="PROP">Elements</field>
+  </block>
+  <block type="local_declaration_statement" id="$-}=*vAsI,@NA4*Lj/P]" x="158" y="1411">
+    <mutation>
+      <localname name="CurrentList"></localname>
+    </mutation>
+    <field name="VAR0">CurrentList</field>
+  </block>
+  <block type="component_set_get" id="FFw-7qc@Xj6=R].x,4ox" x="183" y="1565">
+    <mutation component_type="ListView" set_or_get="set" property_name="Elements" is_generic="false" instance_name="ListView1"></mutation>
+    <field name="COMPONENT_SELECTOR">ListView1</field>
+    <field name="PROP">Elements</field>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

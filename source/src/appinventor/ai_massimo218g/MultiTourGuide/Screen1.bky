@@ -1,0 +1,119 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="n,K8/!C8%zJ#4+/o/0`x" x="-492" y="-160">
+    <mutation component_type="Button" is_generic="false" instance_name="bSlo" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bSlo</field>
+    <statement name="DO">
+      <block type="component_method" id="io9$xqcnr8|f]~[M0Mdf">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="KpdW_pQN-x92.Yk4A3)g">
+            <field name="TEXT">Language</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="hkZs$yfUp51-4-$ki2dC">
+            <field name="TEXT">Si</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="ynyhShx+h3X:)*lFjA~(">
+            <value name="SCREEN">
+              <block type="text" id="n`(,$`vK2_m8$ez%7Vb7">
+                <field name="TEXT">MapsScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="y%Y(Jx]-VC8X|2Z;6vkC" x="152" y="-103">
+    <mutation component_type="Button" is_generic="false" instance_name="bGb" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bGb</field>
+    <statement name="DO">
+      <block type="component_method" id="59tOXS=Kuzjl4uD0W2^d">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="P#u~HC1h~yj!S}7ZGuJ[">
+            <field name="TEXT">Language</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="D6(y~s-nWpUQ/C4qw0xx">
+            <field name="TEXT">Gb</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="Rl%[+^OT/|}DyEzG6FP1">
+            <value name="SCREEN">
+              <block type="text" id="Bw~b6fLd]bvomokx!C*B">
+                <field name="TEXT">MapsScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="vr:!#J07:+MB9Z;IQ{j$" x="-488" y="55">
+    <mutation component_type="Button" is_generic="false" instance_name="bita" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bita</field>
+    <statement name="DO">
+      <block type="component_method" id="BZ@E(m*#U#ae%Tr~0|W+">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="Np3#N8]zgl6LB0Xy[+Yq">
+            <field name="TEXT">Language</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="7+aLvN~M@95{_Kxs})g#">
+            <field name="TEXT">It</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="m3|`jS$4,z0Ji_^;))h~">
+            <value name="SCREEN">
+              <block type="text" id="Z.y,{R|fQDRB;0G4q/4O">
+                <field name="TEXT">MapsScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="xfJE*Lj(`B0D.P[e=vl~" x="138" y="142">
+    <mutation component_type="Button" is_generic="false" instance_name="bDe" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bDe</field>
+    <statement name="DO">
+      <block type="component_method" id="AwC6Jr_-W7IyI#.B:ofi">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="/5Qxo^qrT[64`AtKSvpE">
+            <field name="TEXT">Language</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="7%xO8J]SZN%1Zf?C-%7n">
+            <field name="TEXT">De</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="DeZv)_R4x]Ry?IAuof|n">
+            <value name="SCREEN">
+              <block type="text" id="n!N`[g@of0lyk:mgcfVw">
+                <field name="TEXT">MapsScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

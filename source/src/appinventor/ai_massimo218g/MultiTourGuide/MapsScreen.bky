@@ -1,0 +1,597 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="ZN|Ljgd!.L?ju/N)b+Fc" x="-913" y="-706">
+    <field name="NAME">MapsIndex</field>
+    <value name="VALUE">
+      <block type="math_number" id=",CVgf{,Qu@%nJW8dOo5_">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="ysHu]:`zrh)c*2oJkUcL" x="-919" y="-661">
+    <field name="NAME">Maps</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~mgihImG;*OZ7(dFP]--">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="0|V);B)ovx86GUwM#~st">
+            <field name="TEXT">Si</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="w2^Vpd[[?p@604=9w(+q">
+            <field name="TEXT">It</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="t1*T6y|)-SX4}(HPpS?+">
+            <field name="TEXT">Gb</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id=".)xT_k$|@{.}3q7UD18R">
+            <field name="TEXT">De</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="2!:4mpk6NK3w8ESESx}e" x="-139" y="-679">
+    <mutation component_type="Form" is_generic="false" instance_name="MapsScreen" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">MapsScreen</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="__aCR/{A(X(2/M2G(X/h">
+        <field name="VAR">global MapsIndex</field>
+        <value name="VALUE">
+          <block type="lists_position_in" id="8UStZzh!7u[=H3`](J*Z">
+            <value name="ITEM">
+              <block type="component_method" id="kd0:sE9KRzBjo.|j[Ybh">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="G!(5StXm~M7NY!LUKMc(">
+                    <field name="TEXT">Language</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="nnmTln?!/ci5iOf/V+ag">
+                    <field name="TEXT">Si</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="IxmH(d|w{ZJBb*o_TSz8">
+                <field name="VAR">global Maps</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="6,{~]1dZ3cj(1KnX|]_/">
+            <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KArbeška"></mutation>
+            <field name="COMPONENT_SELECTOR">KArbeška</field>
+            <field name="PROP">Description</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="=CHDz=U,dm=G5FyEm9Tr">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="H[aI;!*Lw5E3o[SJyd`*">
+                    <field name="VAR">global KAText</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="lexical_variable_get" id="/x8x4^uqAc;YUF]g;.Ny">
+                    <field name="VAR">global MapsIndex</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="(l`CAJR4it{//gh]k}(x">
+                <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KIvanka"></mutation>
+                <field name="COMPONENT_SELECTOR">KIvanka</field>
+                <field name="PROP">Description</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="TdPh78z|:g*ERgD]2nNY">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="gQHU+(c$6qiu9C6)XL})">
+                        <field name="VAR">global KIText</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="lexical_variable_get" id="({le,#9+T^`%Etv,Q%4E">
+                        <field name="VAR">global MapsIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="ERytw#qj=V8G{i8*uqkr">
+                    <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KMatajurka"></mutation>
+                    <field name="COMPONENT_SELECTOR">KMatajurka</field>
+                    <field name="PROP">Description</field>
+                    <value name="VALUE">
+                      <block type="lists_select_item" id="9-zRgJy0*/Ea;$b~Y1e_">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id=".l$9:1cs?qick%4_ovsP">
+                            <field name="VAR">global KMText</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="lexical_variable_get" id="^wIq02_bzS{E,RW~/7be">
+                            <field name="VAR">global MapsIndex</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="XV_,uO)KC@DVBB)QV2sm">
+                        <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KRečanka"></mutation>
+                        <field name="COMPONENT_SELECTOR">KRečanka</field>
+                        <field name="PROP">Description</field>
+                        <value name="VALUE">
+                          <block type="lists_select_item" id="w+wbVp4H70:#(cg;GnTc">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="xR$w!{pXCm%?YWP8tH{)">
+                                <field name="VAR">global KRText</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <block type="lexical_variable_get" id="bFx5_;75cJf[;uk|i^GM">
+                                <field name="VAR">global MapsIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="O?tfo4Q/%C$:]nxb[MV+">
+                            <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KSarženska"></mutation>
+                            <field name="COMPONENT_SELECTOR">KSarženska</field>
+                            <field name="PROP">Description</field>
+                            <value name="VALUE">
+                              <block type="lists_select_item" id="Y9NjeZ4K6u]nLTi7W!(x">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="A:Z(~0N;BE9|cM]R^f|i">
+                                    <field name="VAR">global KSaText</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="lexical_variable_get" id="_FpdZ=npv@+vB7tgz#I;">
+                                    <field name="VAR">global MapsIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_set_get" id="5-;wDaM!O?QeB5Udd?va">
+                                <mutation component_type="Marker" set_or_get="set" property_name="Description" is_generic="false" instance_name="KStarogorka"></mutation>
+                                <field name="COMPONENT_SELECTOR">KStarogorka</field>
+                                <field name="PROP">Description</field>
+                                <value name="VALUE">
+                                  <block type="lists_select_item" id="2pmwzUVUDk%Qw$p`Wb}x">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="#E${S~$}U5?}b}m0dTDV">
+                                        <field name="VAR">global KStText</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="lexical_variable_get" id="h{,U,U~upLvEfGDqv.cP">
+                                        <field name="VAR">global MapsIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="a(|X;.L4(EG|V:bW9@sl">
+                                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="InstructionLabel"></mutation>
+                                    <field name="COMPONENT_SELECTOR">InstructionLabel</field>
+                                    <field name="PROP">Text</field>
+                                    <value name="VALUE">
+                                      <block type="lists_select_item" id="I3W}g6j2*hbKLL+i8mQC">
+                                        <value name="LIST">
+                                          <block type="lexical_variable_get" id="+JXk#JusZceRY9gv5u!n">
+                                            <field name="VAR">global InstructionText</field>
+                                          </block>
+                                        </value>
+                                        <value name="NUM">
+                                          <block type="lexical_variable_get" id="~j$#8((#EiM1(ing11X_">
+                                            <field name="VAR">global MapsIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id=".,E6aW^?r9);.[#egU=a" x="-921" y="-534">
+    <field name="NAME">KAText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="XQ)3;`]m@9AV8Vuz!J7p">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="k+^t+ra|+avEf9QCRAq0">
+            <field name="TEXT"> An tle na manjkajo ljudje, ki hodejo gledat slap Kot</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="hdxZ]RTmERb+2CB(+3D9">
+            <field name="TEXT">Anche qui non manca la gente che viene a vedere le cascate di Coot</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="lhis#wN5gMsq/]w0gRV8">
+            <field name="TEXT">Here, too, there is no lack of people who come to see Coot Falls</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="l2u+RrdqO7;h2@o5~R=i">
+            <field name="TEXT">Auch hier mangelt es nicht an Menschen, die zu Coot Falls kommen</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="3E[._`gY/NSr7C+wl[NR" x="-927" y="-397">
+    <field name="NAME">KIText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="=SY5c[w%D~7sQ/[;mHtu">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="Ill|tx2JrCkyeytZiaJJ">
+            <field name="TEXT">Takuo me kličejo zaki te pravo  ime Landarja  je svet Ivan gu čele.</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="j$x?d.OwJX%Vg!vBjqz!">
+            <field name="TEXT">Mi chiamano così perché Antro si chiama San Giovanni d’Antro… Giovanni  x noi è Ivan.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="][ph;0|vq/%qWEQ,[2S4">
+            <field name="TEXT">They call me that because Antro is called San Giovanni d'Antro ... Giovanni x us is Ivan.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="n!QL,U#$GdAS%KRD*#Sd">
+            <field name="TEXT">Sie nennen mich so, weil Antro San Giovanni d'Antro heißt ... Giovanni x us ist Ivan.</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="4#J$M3co-@.9a_7USF2@" x="-934" y="-274">
+    <field name="NAME">KMText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="mCZaei5wUmc.Px`O`VW+">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="ibrVTi}{^Z(Eh,m08J5w">
+            <field name="TEXT">…san, živim gor na Velik Bab, ku ki so pravli naši te stari. </field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="#}t;A)(ap]+rV?n|R3@G">
+            <field name="TEXT">Vivo qui sulla Velika Baba, la grande Madre come la chiamavano i vecchi abitanti.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="zvd1=UOy766UpENY`bml">
+            <field name="TEXT">I live here on Velika Baba, the great Mother as the old inhabitants called her.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="-Jom7kiH#}xk#L9FKYhb">
+            <field name="TEXT">Ich lebe hier auf Velika Baba, der großen Mutter, wie die alten Bewohner sie nannten.</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="F^i%7vmUp#_}F4OQi,i9" x="-938" y="-148">
+    <field name="NAME">KRText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~UJodz=e*i}4(#|u;/+}">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="Ndk*@R6+,NrjDT/^S[2D">
+            <field name="TEXT">San šele tle v Rečanski dolin</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="0/VEKx`s:!0/){-!m3GD">
+            <field name="TEXT">Abito ancora qui nella valle dell’Erbezzo</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="NU(m91Jbx71SeU8MGHVw">
+            <field name="TEXT">I still live here in the Erbezzo valley</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="E`J$7FkQqfY,W`Qzl{}c">
+            <field name="TEXT">Ich lebe immer noch hier im Erbezzo-Tal</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="i-`6G:-{Yin`Sp~~t+yG" x="-133" y="-139">
+    <mutation component_type="Marker" is_generic="false" instance_name="KArbeška" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KArbeška</field>
+    <statement name="DO">
+      <block type="component_method" id="R,EsiL#-3P%`RW[1HX12">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="}$yc!ziT|EjuDr|P=SR7">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="hkZs$yfUp51-4-$ki2dC">
+            <field name="TEXT">Arbeška</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="`[o%T4;:_UJR*38Jd%{)">
+            <value name="SCREEN">
+              <block type="text" id="TY_mys};^f==b/eFQ+O?">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="LHvBXBM1s$s[{-({B)(s" x="346" y="-138">
+    <mutation component_type="Marker" is_generic="false" instance_name="KIvanka" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KIvanka</field>
+    <statement name="DO">
+      <block type="component_method" id="4lK1eUxiVxk!FwXBlVy_">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="Sg[l|bou!*Z?#cZ)*T=J">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="1kiz*:YPv.GdusF:.iij">
+            <field name="TEXT">Ivanka</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="+EjNTtI[^@Yt4OkeD|k8">
+            <value name="SCREEN">
+              <block type="text" id="n`(,$`vK2_m8$ez%7Vb7">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="-Ed%U%gh9^0_.+L2%yNS" x="-947" y="-12">
+    <field name="NAME">KSaText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="Ums7l_KJ}}GG^MB:+}R4">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="OJc6P7-y]e4HX^.oM}`N">
+            <field name="TEXT">Duo me na pozna, gor za Makotah, gu Tarnjah, ta pod skalah,  smo živiele</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="etCPOeI.uRW6+~p_JwS7">
+            <field name="TEXT">Chi non mi conosce,  Su dietro a Makota, a Tarnje sotto le rocce vivevamo</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="V}sJBU9$T`IL6ejfJ2vj">
+            <field name="TEXT">Who does not know me, Up behind Makota, in Tarnje we lived under the rocks</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="%ud{1AS^vjXl=03q8*Mu">
+            <field name="TEXT">Wer kennt mich nicht? Oben hinter Makota lebten wir in Tarnje unter den Felsen</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="76e}oPQGsx/?MOIX8rk:" x="-136" y="28">
+    <mutation component_type="Marker" is_generic="false" instance_name="KMatajurka" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KMatajurka</field>
+    <statement name="DO">
+      <block type="component_method" id="HMIS@/^,J@hQD:mMO;U0">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="-D7H00B#BCc9_tIx4b$*">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id=")m2Juim}3;G6EEK+a`H=">
+            <field name="TEXT">Matajurka</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="nV|8RYAR0fMW,/Mn9KAG">
+            <value name="SCREEN">
+              <block type="text" id="FjdCWLjr{]+W}Q=UMSQ1">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="o%0,?bW?cL_@9yDdt6)@" x="349" y="34">
+    <mutation component_type="Marker" is_generic="false" instance_name="KRečanka" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KRečanka</field>
+    <statement name="DO">
+      <block type="component_method" id="W?YW=F@[NY:]M:Jz]D^[">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="_MXjE,d_Wbb-F8u|*u58">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="1jZz3+Am![m7ubQs7f%|">
+            <field name="TEXT">Rečanka</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="{_7gNi)D|$yE,gV:~iL-">
+            <value name="SCREEN">
+              <block type="text" id="9QRBej_/M5s}A,aCj?Dj">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="LIne_%O.5cJ-tv7D]Oze" x="-951" y="120">
+    <field name="NAME">KStText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="1}j2c[FMMWEB2M`m;xud">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id=".|2_Y-4UKv+nT7Mt,R8X">
+            <field name="TEXT">Nu,  ki takuo niesmo same, videmo še kakega človieka</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="*)*kq~fEMVS5uk**$=Fr">
+            <field name="TEXT">Su che così non siamo sole, vediamo almeno un po’ di gente</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="+VK{}+D69D9f{P.:/{ML">
+            <field name="TEXT">So we are not alone, we see at least a few people</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="P!/YH[TRR1[ipAx!ZvwX">
+            <field name="TEXT">Wir sind also nicht allein, wir sehen zumindest ein paar Leute</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="fLZ9_W.50j.#B.^^zDDX" x="-957" y="243">
+    <field name="NAME">InstructionText</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="2i5%d#MlP1Zo)O`el.@D">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="L@akZx%)u]eL!siW=_D!">
+            <field name="TEXT">Za informacije kliknite oznako. Dolgo kliknite za več podrobnosti o lokaciji.</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="R~6Ojv-h6+e?1[jQ5Q_z">
+            <field name="TEXT">Fare clic su un marker per le informazioni. Tenere premuto per maggiori dettagli su una posizione.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="-s.kiq+`d9KX9@:FWVbY">
+            <field name="TEXT">Click on a marker for information. Long-click for more detail on a location.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="D!I}1hbV)STQp2Kb*xOc">
+            <field name="TEXT">Klicken Sie auf eine Markierung, um Informationen zu erhalten. Klicken Sie lange, um weitere Informationen zu einem Standort zu erhalten.</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="(nBf[pSFOa)NVX_jEr:!" x="-126" y="202">
+    <mutation component_type="Marker" is_generic="false" instance_name="KSarženska" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KSarženska</field>
+    <statement name="DO">
+      <block type="component_method" id="0QvN9(t$foU+(}JI|)aF">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="([a[|j;Z}%S=l4lT)Sa@">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="LW#G`Lef~Mkb+a]qcVM2">
+            <field name="TEXT">Sarženska</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="mKE:H,r]Z5lz,GqIFZYc">
+            <value name="SCREEN">
+              <block type="text" id="8uRAs85xw5w.hC+=KLu*">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/`=Aoq;$^GFSt^1k-vY%" x="343" y="204">
+    <mutation component_type="Marker" is_generic="false" instance_name="KStarogorka" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">KStarogorka</field>
+    <statement name="DO">
+      <block type="component_method" id="kf!(t.3S8.5VTC,{@~u+">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="hc1Y:CMQ@J2a}?G_JaO:">
+            <field name="TEXT">Krivapeta</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="_^)S|@n0~T.Wmr*+uvy7">
+            <field name="TEXT">Starogorka</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="@j*Zpg!82Hcm7jS_#1TV">
+            <value name="SCREEN">
+              <block type="text" id="#pNzAKa.+Z*)]i*_=63g">
+                <field name="TEXT">LocationScreen</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="$b#?$vTA}Wg$QTN?`k[7" x="-96" y="415">
+    <mutation component_type="Button" is_generic="false" instance_name="bHome" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">bHome</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="?0#dCRt*],wUsx@AW?{3"></block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

@@ -1,0 +1,658 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="]xW5~2@TtP@+]E0{Io%|" x="-466" y="-988">
+    <field name="NAME">LanguageIndex</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="F/aWv*;Dr`]ER?T{~W.#">
+        <mutation items="4"></mutation>
+        <value name="ADD0">
+          <block type="text" id="27uKx3smA/F@`=X?(Anj">
+            <field name="TEXT">Si</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="2]7/aD26zOBnp!sWH-w4">
+            <field name="TEXT">It</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="H966j%kt)tQYKb.2ixBm">
+            <field name="TEXT">Gb</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="(DsqysU}xOvMx5_~MAfT">
+            <field name="TEXT">De</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="2!:4mpk6NK3w8ESESx}e" x="100" y="-841">
+    <mutation component_type="Form" is_generic="false" instance_name="LocationScreen" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">LocationScreen</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="__aCR/{A(X(2/M2G(X/h">
+        <field name="VAR">global LocationIndex</field>
+        <value name="VALUE">
+          <block type="lists_position_in" id="8UStZzh!7u[=H3`](J*Z">
+            <value name="ITEM">
+              <block type="component_method" id="UX}y==2($,Jx%?H?HahF">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="OeJ0O5gZ*3DPtj8qp)1z">
+                    <field name="TEXT">Krivapeta</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="Xk]@bm@^B4/p*tT1KAH5">
+                    <field name="TEXT">Ivanka</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="IxmH(d|w{ZJBb*o_TSz8">
+                <field name="VAR">global Locations</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id=",Tf7JfON[zK3vCqXukVy">
+            <field name="VAR">global LanguageIndex</field>
+            <value name="VALUE">
+              <block type="component_method" id="?LQsy*GMFvWE$,4ZKe5=">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="4L/W],[X8YB5@5bC^{9t">
+                    <field name="TEXT">Language</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="BpvlA+T{|V=UFEUvlM!%">
+                    <field name="TEXT">Si</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="7=Ao;z$:q+ftLkXK|-}H">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="LocationLabel"></mutation>
+                <field name="COMPONENT_SELECTOR">LocationLabel</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="Y9NjeZ4K6u]nLTi7W!(x">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="A:Z(~0N;BE9|cM]R^f|i">
+                        <field name="VAR">global Locations</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="lexical_variable_get" id="_FpdZ=npv@+vB7tgz#I;">
+                        <field name="VAR">global LocationIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="v$6b9Z;cWn-:D80ix/}u">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="DescriptionLabel"></mutation>
+                    <field name="COMPONENT_SELECTOR">DescriptionLabel</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="controls_choose" id="GOpr^r?cwWr-8VPYaFbs">
+                        <value name="TEST">
+                          <block type="text_compare" id="oQZod?Dy624-I}|enWI4">
+                            <field name="OP">EQUAL</field>
+                            <value name="TEXT1">
+                              <block type="lexical_variable_get" id="]Ee4qs!So[f[aB-c^3|e">
+                                <field name="VAR">global LanguageIndex</field>
+                              </block>
+                            </value>
+                            <value name="TEXT2">
+                              <block type="text" id="zUEn*v{%Yk9XgwBI{)9J">
+                                <field name="TEXT">Si</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="THENRETURN">
+                          <block type="lists_select_item" id="2B+Zjp`7tj1{z+Q!YSfx">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="V.){b$:5292Nv7DG5^vo">
+                                <field name="VAR">global DescriptionsSi</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <block type="lexical_variable_get" id="!Q3wTihe8L?n$f*m(P.4">
+                                <field name="VAR">global LocationIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ELSERETURN">
+                          <block type="controls_choose" id="-3eq5(/wI)rn5PZe.G!t">
+                            <value name="TEST">
+                              <block type="text_compare" id="YgiHRi7fV,0L$/2vhdxt">
+                                <field name="OP">EQUAL</field>
+                                <value name="TEXT1">
+                                  <block type="lexical_variable_get" id="Qm*S?xq3~;gUw364W*iL">
+                                    <field name="VAR">global LanguageIndex</field>
+                                  </block>
+                                </value>
+                                <value name="TEXT2">
+                                  <block type="text" id="1s@BEDB^S+gNf@tm^ksh">
+                                    <field name="TEXT">It</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="THENRETURN">
+                              <block type="lists_select_item" id=":5c^BR3#r,:O`jPuzi)0">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="TD|dRTGWpI+B;v=.9}RH">
+                                    <field name="VAR">global DescriptionsIt</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="lexical_variable_get" id="~;2bvMD-;mP%b;{KXl].">
+                                    <field name="VAR">global LocationIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ELSERETURN">
+                              <block type="controls_choose" id="4NhCo`zKsImBZr%y_KP6">
+                                <value name="TEST">
+                                  <block type="text_compare" id="mbvWypL8X|BNUKL](wki">
+                                    <field name="OP">EQUAL</field>
+                                    <value name="TEXT1">
+                                      <block type="lexical_variable_get" id="xvM@8=MP{C@+$yQ!QE,D">
+                                        <field name="VAR">global LanguageIndex</field>
+                                      </block>
+                                    </value>
+                                    <value name="TEXT2">
+                                      <block type="text" id="y;4:-I|4;b[#mKUk_#|i">
+                                        <field name="TEXT">Gb</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="THENRETURN">
+                                  <block type="lists_select_item" id=":@#$%[%1QiJ+/G`XovCc">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="KC-}9HZMz9[auO;};nEK">
+                                        <field name="VAR">global DescriptionsGb</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="lexical_variable_get" id="ejsT}wQZh:I3FqB!N|^%">
+                                        <field name="VAR">global LocationIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ELSERETURN">
+                                  <block type="lists_select_item" id="BjdHN!JA2IsJvCuGBGR.">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id=")vl?Jt7PGdY?nc!%Le#f">
+                                        <field name="VAR">global DescriptionsDe</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="lexical_variable_get" id="t8]4a:^fLo6?}/M)r+st">
+                                        <field name="VAR">global LocationIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="Vg;:Zi#k%mX5n|s@3EUQ">
+                        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Image1</field>
+                        <field name="PROP">Picture</field>
+                        <value name="VALUE">
+                          <block type="lists_select_item" id="D1,;23tBOcpNQ)cl~8HO">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="F;.GzQ,b].tTDfqcg3cK">
+                                <field name="VAR">global Pictures</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <block type="lexical_variable_get" id="ZymRbLsvzAyavel){dES">
+                                <field name="VAR">global LocationIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="ZN|Ljgd!.L?ju/N)b+Fc" x="-782" y="-747">
+    <field name="NAME">LocationIndex</field>
+    <value name="VALUE">
+      <block type="math_number" id=",CVgf{,Qu@%nJW8dOo5_">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="ysHu]:`zrh)c*2oJkUcL" x="-790" y="-696">
+    <field name="NAME">Locations</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~mgihImG;*OZ7(dFP]--">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="0|V);B)ovx86GUwM#~st">
+            <field name="TEXT">Sarženska</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="w2^Vpd[[?p@604=9w(+q">
+            <field name="TEXT">Ivanka</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="t1*T6y|)-SX4}(HPpS?+">
+            <field name="TEXT">Matajurka</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id=".)xT_k$|@{.}3q7UD18R">
+            <field name="TEXT">Arbeška</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="n5pHx56kOtrXU=td0`3j">
+            <field name="TEXT">Rečanka</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="~sb@cKpX:Bj8E_)G93@#">
+            <field name="TEXT">Starogorka</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="DQla2*^0@|a-WE6j|3^7" x="-788" y="-523">
+    <field name="NAME">Pictures</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="LrqiZN?mvr78Wvhb{/!r">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="MzsfDPG]k=Fnf`y?tr8,">
+            <field name="TEXT">Sarzenska.jpg</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="~x?I?X6Lj0r2{~TnE6rO">
+            <field name="TEXT">Ivanka.jpg</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="Q|u%bgbKto]L]i~6E]F%">
+            <field name="TEXT">Matajurka.jpg</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="HNMZx]H}#.rXheE1TCbZ">
+            <field name="TEXT">Arbeska.jpg</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="p=6QpO[20}|T0V2|v7}r">
+            <field name="TEXT">Recanka.jpg</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="XM##2mM^?k**zfpPD.g=">
+            <field name="TEXT">Starogorka.jpg</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="Mx9(FJ;aIdk%b6TJ$$vC" x="-797" y="-334">
+    <field name="NAME">DescriptionsSi</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="$7Wbt,C(]}v0`uIh{4#=">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="iLpFK^ts6My/RJ2PPY9c">
+            <field name="TEXT">Duo me na pozna, gor za Makotah, gu Tarnjah, ta pod skalah,  smo živiele…kje so tisti cajti, ki me je tist mlad du vas parpeju an san vse, vse,kar san znala naučila runat…še gubanco an štrukje!</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="||1lQ^RE88x7`vsM$T[o">
+            <field name="TEXT">Takuo me kličejo zaki te pravo  ime Landarja  je svet Ivan gu čele. Pravejo de san  usadila tist star kostanj gu host blizu Ofjane,  dan te narbuj starih Nediških dolin… resnice na bota nikdar viedel pa ga šele varjen zaki jih je puno provu.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="f=AdS0kwS$MC{C*7Nurh">
+            <field name="TEXT"> …san, živim gor na Velik Bab, ku ki so pravli naši te stari.  Iman tri škrate tle okuole,  ki dušpetujejo tud ljuden,  ki hodejo na naš Triglav an se ustavejo v koči Dom na Matajure. </field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="m8y:I#*+`MyQf!.Qk*^R">
+            <field name="TEXT"> An tle na manjkajo ljudje, ki hodejo gledat slap Kot. Kajšan krat mi se zdi de ljudje na zastopejo kakuo so bli navezani na njih korenine, kakuo so saldu gledal prenest na mlade roduove njih bogatijo… </field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="v8=Ld0ou36,D/q^~WP!5">
+            <field name="TEXT">San šele tle v Rečanski dolin…  dobro čujen an dobro viden…samuo, ki tisti gu Tapoluoven me vsako  zmiešajo… puošta, letališče za aeroplane, ambašade… se zmišnjavajo vsega </field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="LNhYl;az{(h+/=N;q9L`">
+            <field name="TEXT">Nu,  ki takuo niesmo same, videmo še kakega človieka…tle jih hode puno…čujen vsake sort jezike. Eh ja, zluodja san vidla, ma ki je ùe tist cajt …. </field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="[!2|h(`K,Oe)#5qo}5XQ" x="-800" y="-161">
+    <field name="NAME">DescriptionsIt</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="QsRmo@Fc)@oO-JI]k:mC">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="$,IG0_o{tK{M/(`QHl.N">
+            <field name="TEXT">Chi non mi conosce,  Su dietro a Makota, a Tarnje sotto le rocce vivevamo…dove sono ormai i tempi in cui quel giovane mi ha condotto in paese, dove ho insegnato, tutto, tutto quello che sapevo…anche a fare la gubana e gli strucchi!</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="F`1=60I^)`Vsgp1q@;$Q">
+            <field name="TEXT">Mi chiamano così perché Antro si chiama San Giovanni d’Antro… Giovanni per noi è Ivan. Dicono che sia stata io a piantare il castagno centenario nel bosco nei pressi di Pegliano, uno dei più vecchi delle Valli del Natisone… La verità non la saprete mai anche se è vero che io me ne prendo cura perché ne ha passate tante.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="NB%!srO302uK|5zNIY6Y">
+            <field name="TEXT">Vivo qui sulla Velika Baba, la grande Madre come la chiamavano i vecchi abitanti. Ho tre škrat che mi girano intorno e fanno dispetti anche alle persone che vengono a camminare sul nostro Triglav e si fermano nel rifugio Doma na Matajure.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="GwA8^(F[R^Th75F_5L^N">
+            <field name="TEXT">Anche qui non manca la gente che viene a vedere le cascate di Coot... alle volte ho l’impressione che non capiscano quanto i nostri antenati fossero legati alle proprie radici, come hanno sempre cercato di tramandare questa ricchezza alle nuove generazioni</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="~|r{DNnJul7_}Rq=9#n!">
+            <field name="TEXT">Abito ancora qui nella valle del Cosizza, vedo e sento ancora bene… solo che quelli a Topolò mi confondono…la posta, l’aeroporto, le ambasciate…veramente le inventano di tutti i colori</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="7/l=|DQtADWNoV=%,=Qs">
+            <field name="TEXT"> Su che così non siamo sole, vediamo almeno un po’ di gente…qui veramente ne viene tanta… sento parlare veramente molte lingue.  Si, certo ho visto il diavolo, ma è un ricordo lontano nel tempo…</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="WuTI6;93|U}d*I,k8E{U" x="-799" y="13">
+    <field name="NAME">DescriptionsGb</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="QWK{N5AwiZjyPXG7;X2j">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="7]Q~g0J07^*SljOgQK1Y">
+            <field name="TEXT">Who does not know me, Up behind Makota, in Tarnje we lived under the rocks ... where are now the times when that young man took me to the village, where I taught everything, everything I knew ... even to do the gubana and make-up!</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="icWYlwFsPrly`;_:}j95">
+            <field name="TEXT">They call me that because Antro is called San Giovanni d’Antro ... Giovanni is Ivan for us. They say it was I who planted the centenary chestnut tree in the woods near Pegliano, one of the oldest in the Natisone Valleys ... You will never know the truth even though it is true that I take care of it because it has been through a lot.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="[ODj=nUieVj!=kUu~Mpm">
+            <field name="TEXT">I live here on Velika Baba, the great Mother as the old inhabitants called her. I have three škrat who go around me and also spite people who come to walk on our Triglav and stop at the Doma na Matajure refuge.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="nFfu6f0OJ_/6Umnx6CE(">
+            <field name="TEXT">Here, too, there is no lack of people who come to see Coot Falls ... sometimes I have the impression that they do not understand how much our ancestors were tied to their roots, as they have always tried to pass on this wealth to new generations</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="XW}`_0.c-U{zpMn,`TxW">
+            <field name="TEXT">I still live here in the Cosizza valley, I still see and hear well ... except that those in Topolò confuse me ... the post office, the airport, the embassies ... they really invent them in all colors</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="H`2[/Hgy|`/SEQlM!oc!">
+            <field name="TEXT">So we are not alone, we see at least some people ... there really come a lot here ... I really hear many languages spoken. Yes, of course I have seen the devil, but it is a distant memory ...</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="NW`GY~N~m}k-[DDKpg59" x="148" y="-16">
+    <mutation component_type="Button" is_generic="false" instance_name="BListen" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BListen</field>
+    <statement name="DO">
+      <block type="component_method" id="gyhUJ@tKR.Nd/@R5OIsw">
+        <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="TextToSpeech1"></mutation>
+        <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+        <value name="ARG0">
+          <block type="component_set_get" id="_F2nqv.#ZQ{J.#z1B97t">
+            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="DescriptionLabel"></mutation>
+            <field name="COMPONENT_SELECTOR">DescriptionLabel</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="@!Ojx]hIte(vJr0L9YVr" x="146" y="92">
+    <mutation component_type="Button" is_generic="false" instance_name="BGallery" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BGallery</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="]ANdX{|?_|]=Gkf(g}W4">
+        <value name="SCREEN">
+          <block type="text" id="B[Eqh03C~y+DeBB3jIeB">
+            <field name="TEXT">GalleryScreen</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="o:)qrP4wpJB`p:WmKz6P" x="-801" y="206">
+    <field name="NAME">DescriptionsDe</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="A+2%LrIUUQ6K(k+^,byT">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="kaSGA$)dz*cIs~S/!hEa">
+            <field name="TEXT">Wer kennt mich nicht, oben hinter Makota, in Tarnje lebten wir unter den Felsen ... wo sind jetzt die Zeiten, als dieser junge Mann mich ins Dorf brachte, wo ich alles lehrte, alles was ich wusste ... sogar um das Gubana zu machen und bilden!</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="g[xUe/.~jHQ[@LjCRMm@">
+            <field name="TEXT">Sie nennen mich so, weil Antro San Giovanni d’Antro heißt ... Giovanni ist Ivan für uns. Sie sagen, ich habe den hundertjährigen Kastanienbaum in den Wäldern in der Nähe von Pegliano gepflanzt, einem der ältesten in den Natison-Tälern ... Sie werden nie die Wahrheit erfahren, obwohl es wahr ist, dass ich mich darum kümmere, weil es viel durchgemacht hat.</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="34W0sle]HsX9_w@^h0O`">
+            <field name="TEXT">Ich lebe hier auf Velika Baba, der großen Mutter, wie die alten Bewohner sie nannten. Ich habe drei škrat, die um mich herumgehen und auch Leute ärgern, die auf unserem Triglav laufen und in der Zuflucht Doma na Matajure anhalten.</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="}.;oKMK0)TQA|jQB`L%/">
+            <field name="TEXT">Auch hier mangelt es nicht an Menschen, die zu Coot Falls kommen ... manchmal habe ich den Eindruck, dass sie nicht verstehen, wie sehr unsere Vorfahren an ihre Wurzeln gebunden waren, da sie immer versucht haben, diesen Reichtum an neue Generationen weiterzugeben</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="IY#lN`pq?^cVr7,~Rb3}">
+            <field name="TEXT">Ich lebe immer noch hier im Cosizza-Tal, ich sehe und höre immer noch gut ... außer dass die in Topolò mich verwirren ... die Post, den Flughafen, die Botschaften ... sie erfinden sie wirklich in allen Farben</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="tb!UPkZ5eVLGJXVNz@^b">
+            <field name="TEXT">Wir sind also nicht allein, wir sehen zumindest einige Leute ... hier kommt wirklich viel ... Ich höre wirklich viele gesprochene Sprachen. Ja, natürlich habe ich den Teufel gesehen, aber es ist eine ferne Erinnerung ...</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="Vq*!;[StF5Vqn6]gC)]:" x="145" y="198">
+    <field name="NAME">CurrentLocation</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="tcIb$^}5Ph(|imAS2G!g">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="`S7wY!rGLIa)tl2O+Wm!" x="146" y="242">
+    <field name="NAME">DestinationAddress</field>
+    <value name="VALUE">
+      <block type="text" id="OTYJs13Afo_QdM-Wuk;?">
+        <field name="TEXT">46.05333522774499, 14.472003351834035</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="nh_%~zV/UYyCy@$0sF60" x="148" y="294">
+    <mutation component_type="Button" is_generic="false" instance_name="BNavigate" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BNavigate</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="w4Reu$x*[6,[-*ckD#61">
+        <field name="VAR">global LocationIndex</field>
+        <value name="VALUE">
+          <block type="lists_position_in" id="]IK71!Xj`;]0bN=6@DMn">
+            <value name="ITEM">
+              <block type="component_method" id="XLeCRhQa$h$AP{[=qNLP">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="jJ0Bph4%Q2ktb8|/}j|Y">
+                    <field name="TEXT">Krivapeta</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="o$Q]Fsp7=,RC.[g!3`tr">
+                    <field name="TEXT">Ivanka</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="-!iwF|X%OL@x/pdmorw@">
+                <field name="VAR">global Locations</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="d3K*:EC3o/n$qhcZNG@e">
+            <mutation component_type="ActivityStarter" set_or_get="set" property_name="Action" is_generic="false" instance_name="ActivityStarter1"></mutation>
+            <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+            <field name="PROP">Action</field>
+            <value name="VALUE">
+              <block type="text" id="NhRLols)m[DBTndI0D,/">
+                <field name="TEXT">android.intent.action.VIEW</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="3oYNX:lB]Ox3]h=BHJ)Q">
+                <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="ActivityStarter1"></mutation>
+                <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+                <field name="PROP">DataUri</field>
+                <value name="VALUE">
+                  <block type="text_join" id="e4I;L6)qUBL[tiD%Vq##">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="p|;zFhPA*M?JU1S9I,6P">
+                        <field name="TEXT">http://maps.google.com/maps/?daddr=</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="lists_select_item" id="q~77!whY+;6{l-!c=f82">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id=".l/^s)kJ@[H+PG:U]}4x">
+                            <field name="VAR">global Destinations</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="lexical_variable_get" id=":HPJXk0.amj4sLz{/BP(">
+                            <field name="VAR">global LocationIndex</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="F*Psli0FMoJ@WvoX7O19">
+                    <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="ActivityStarter1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="GEgF%{!4^c]]@z#5_zN#" x="-268" y="462">
+    <mutation component_type="Button" is_generic="false" instance_name="BBack" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BBack</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="VP?m+RZae!YMhPC?dZQ_"></block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="A~4jpRJ@y/FyoQ;Q=heY" x="161" y="657">
+    <field name="NAME">Destinations</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="BLKNpEVc8?$K*d`tr+uT">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="NwPB4!D71cWm^!$O~iz6">
+            <field name="TEXT">46.139771397752476, 13.491249917322744</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="c2vNR]fOYgHzL-CW4ke$">
+            <field name="TEXT">46.15174606285444, 13.474188721269071</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="y]1Lmc+*O0HsQqa@wY4g">
+            <field name="TEXT">46.183388287183234, 13.549884412309796</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="i%0qOTIjB0pcdGOg)F.,">
+            <field name="TEXT">46.111619403387614, 13.541582882616868</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="xCd@jt@Y*,NPtobMaId,">
+            <field name="TEXT">46.17720729172567, 13.603230665432</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="wh)Hr.j8pfjz4;*|yu#(">
+            <field name="TEXT">46.09432450085961, 13.520265090286653</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

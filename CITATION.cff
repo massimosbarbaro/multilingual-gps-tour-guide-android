@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you refer to this software, please cite it as below."
+type: software
+title: "Multi Tour Guide: multilingual GPS tour-guide engine (MIT App Inventor (Android), 2020–2021)"
+version: "1.0 (2)"
+abstract: "Multi Tour Guide generalises the folklore tour guide into a reusable engine. The user chooses one of four languages (Slovene dialect, Italian, English, German) with flag buttons; every text of the tour is stored in the four languages. It adds a dedicated map screen, home and back navigation and pinch zoom on images, and was later reused for the carnival-traditions guide."
+authors:
+  - family-names: Sbarbaro
+    given-names: Massimo
+    orcid: "https://orcid.org/0009-0006-8965-9013"
+license: MIT
+repository-code: "https://github.com/massimosbarbaro/multilingual-gps-tour-guide-appinventor"
+keywords:
+  - "MIT App Inventor"
+  - "Android"
+  - "GPS"
+  - "maps"
+  - "multilingual"
+  - "cultural tourism"

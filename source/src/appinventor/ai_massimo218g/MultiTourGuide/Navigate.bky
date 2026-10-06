@@ -1,0 +1,173 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="ZN|Ljgd!.L?ju/N)b+Fc" x="-779" y="-372">
+    <field name="NAME">LocationIndex</field>
+    <value name="VALUE">
+      <block type="math_number" id=",CVgf{,Qu@%nJW8dOo5_">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="ysHu]:`zrh)c*2oJkUcL" x="-792" y="-311">
+    <field name="NAME">Locations</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~mgihImG;*OZ7(dFP]--">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="0|V);B)ovx86GUwM#~st">
+            <field name="TEXT">Sarženska</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="w2^Vpd[[?p@604=9w(+q">
+            <field name="TEXT">Ivanka</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="t1*T6y|)-SX4}(HPpS?+">
+            <field name="TEXT">Matajurka</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id=".)xT_k$|@{.}3q7UD18R">
+            <field name="TEXT">Arbeška</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="n5pHx56kOtrXU=td0`3j">
+            <field name="TEXT">Rečanka</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="~sb@cKpX:Bj8E_)G93@#">
+            <field name="TEXT">Starogorka</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="`S7wY!rGLIa)tl2O+Wm!" x="15" y="-240">
+    <field name="NAME">DestinationAddress</field>
+    <value name="VALUE">
+      <block type="text" id="OTYJs13Afo_QdM-Wuk;?">
+        <field name="TEXT">46.05333522774499, 14.472003351834035</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="Vq*!;[StF5Vqn6]gC)]:" x="50" y="-206">
+    <field name="NAME">CurrentLocation</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="tcIb$^}5Ph(|imAS2G!g">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="2!:4mpk6NK3w8ESESx}e" x="-789" y="-137">
+    <mutation component_type="Form" is_generic="false" instance_name="Navigate" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Navigate</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="__aCR/{A(X(2/M2G(X/h">
+        <field name="VAR">global LocationIndex</field>
+        <value name="VALUE">
+          <block type="lists_position_in" id="8UStZzh!7u[=H3`](J*Z">
+            <value name="ITEM">
+              <block type="controls_getStartValue" id="ZraQm{4Q0r(^Ljp:_Q:7"></block>
+            </value>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="IxmH(d|w{ZJBb*o_TSz8">
+                <field name="VAR">global Locations</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="d3K*:EC3o/n$qhcZNG@e">
+            <mutation component_type="ActivityStarter" set_or_get="set" property_name="Action" is_generic="false" instance_name="ActivityStarter1"></mutation>
+            <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+            <field name="PROP">Action</field>
+            <value name="VALUE">
+              <block type="text" id="NhRLols)m[DBTndI0D,/">
+                <field name="TEXT">android.intent.action.VIEW</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="3oYNX:lB]Ox3]h=BHJ)Q">
+                <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="ActivityStarter1"></mutation>
+                <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+                <field name="PROP">DataUri</field>
+                <value name="VALUE">
+                  <block type="text_join" id="e4I;L6)qUBL[tiD%Vq##">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="p|;zFhPA*M?JU1S9I,6P">
+                        <field name="TEXT">http://maps.google.com/maps/?daddr=</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="lists_select_item" id="jaj2B/EJ?k7X)k36jK_D">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="V.){b$:5292Nv7DG5^vo">
+                            <field name="VAR">global Destinations</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="lexical_variable_get" id="]Ee4qs!So[f[aB-c^3|e">
+                            <field name="VAR">global LocationIndex</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="F*Psli0FMoJ@WvoX7O19">
+                    <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="ActivityStarter1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ActivityStarter1</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="DQla2*^0@|a-WE6j|3^7" x="-800" y="113">
+    <field name="NAME">Destinations</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="LrqiZN?mvr78Wvhb{/!r">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="NwPB4!D71cWm^!$O~iz6">
+            <field name="TEXT">46.139771397752476, 13.491249917322744</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="c2vNR]fOYgHzL-CW4ke$">
+            <field name="TEXT">46.15174606285444, 13.474188721269071</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="y]1Lmc+*O0HsQqa@wY4g">
+            <field name="TEXT">46.183388287183234, 13.549884412309796</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="i%0qOTIjB0pcdGOg)F.,">
+            <field name="TEXT">46.111619403387614, 13.541582882616868</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="xCd@jt@Y*,NPtobMaId,">
+            <field name="TEXT">46.17720729172567, 13.603230665432</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="wh)Hr.j8pfjz4;*|yu#(">
+            <field name="TEXT">46.09432450085961, 13.520265090286653</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>

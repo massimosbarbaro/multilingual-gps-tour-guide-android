@@ -1,8 +1,8 @@
 {
-  "title": "Multi Tour Guide: multilingual GPS tour-guide engine (MIT App Inventor (Android), 2020–2021)",
+  "title": "Multi Tour Guide: multilingual GPS tour-guide engine (Android, 2020–2021)",
   "upload_type": "software",
   "publication_date": "2021-01-06",
-  "description": "<p><em>Motore multilingue per guide turistiche GPS</em></p><p>Multi Tour Guide generalises the folklore tour guide into a reusable engine. The user chooses one of four languages (Slovene dialect, Italian, English, German) with flag buttons; every text of the tour is stored in the four languages. It adds a dedicated map screen, home and back navigation and pinch zoom on images, and was later reused for the carnival-traditions guide.</p><p>Designed and programmed by Massimo Sbarbaro in 2020–2021 (MIT App Inventor (Android)). Published in 2026; all original data and the names of client organisations have been removed.</p>",
+  "description": "<p><em>Motore multilingue per guide turistiche GPS</em></p><p>Multi Tour Guide generalises the folklore tour guide into a reusable engine. The user chooses one of four languages (Slovene dialect, Italian, English, German) with flag buttons; every text of the tour is stored in the four languages. It adds a dedicated map screen, home and back navigation and pinch zoom on images, and was later reused for the carnival-traditions guide.</p><p>Designed and programmed by Massimo Sbarbaro in 2020–2021 (Android). Published in 2026; all original data and the names of client organisations have been removed.</p>",
   "creators": [
     {
       "name": "Sbarbaro, Massimo",

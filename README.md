@@ -1,8 +1,10 @@
 # Multi Tour Guide: multilingual GPS tour-guide engine
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23205256.svg)](https://doi.org/10.5281/zenodo.23205256)
+
 *Motore multilingue per guide turistiche GPS*
 
-**MIT App Inventor (Android)** · 2020–2021 · version 1.0 (2)  
+**Android** · 2020–2021 · version 1.0 (2)  
 Author: **Massimo Sbarbaro** ([ORCID 0009-0006-8965-9013](https://orcid.org/0009-0006-8965-9013))
 
 ## Overview
@@ -41,14 +43,14 @@ Photographs, illustrations, logos, sound recordings and stock images are **not**
 
 ## Related repositories
 
-- [folklore-gps-tour-guide-appinventor](https://github.com/massimosbarbaro/folklore-gps-tour-guide-appinventor)
-- [carnival-traditions-tour-guide-appinventor](https://github.com/massimosbarbaro/carnival-traditions-tour-guide-appinventor)
+- [folklore-gps-tour-guide-android](https://github.com/massimosbarbaro/folklore-gps-tour-guide-android)
+- [carnival-traditions-tour-guide-android](https://github.com/massimosbarbaro/carnival-traditions-tour-guide-android)
 
 ## How to cite
 
-Use the citation metadata in [`CITATION.cff`](CITATION.cff) (GitHub: *Cite this repository*). Each release is archived on Zenodo with its own DOI.
+Use the citation metadata in [`CITATION.cff`](CITATION.cff) (GitHub: *Cite this repository*). The release is archived on Zenodo with the DOI [10.5281/zenodo.23205256](https://doi.org/10.5281/zenodo.23205256).
 
-> Sbarbaro, Massimo. *Multi Tour Guide: multilingual GPS tour-guide engine (MIT App Inventor (Android), 2020–2021)*. Software, version 1.0 (2). GitHub: https://github.com/massimosbarbaro/multilingual-gps-tour-guide-appinventor
+> Sbarbaro, Massimo. 2021. *Multi Tour Guide: multilingual GPS tour-guide engine*. Software (Android, 2020–2021), version 1.0 (2). Zenodo. https://doi.org/10.5281/zenodo.23205256.
 
 ## License
 

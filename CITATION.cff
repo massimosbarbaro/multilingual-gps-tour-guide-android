@@ -12,7 +12,6 @@ license: MIT
 doi: "10.5281/zenodo.23205256"
 repository-code: "https://github.com/massimosbarbaro/multilingual-gps-tour-guide-android"
 keywords:
-  - "MIT App Inventor"
   - "Android"
   - "GPS"
   - "maps"
